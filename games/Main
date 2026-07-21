@@ -9,5 +9,5 @@ local run = function(func)
 end
 
 run(function()
-    queue_on_teleport("loadstring(game:HttpGet(''))()")
+    queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/CookieScript/Juju-Dino/refs/heads/main/Loader'))()")
 end)
