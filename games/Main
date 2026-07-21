@@ -1,0 +1,13 @@
+--[[
+
+    i use this for auto execute
+
+]]
+
+local run = function(func)
+    func()
+end
+
+run(function()
+    queue_on_teleport("loadstring(game:HttpGet(''))()")
+end)
