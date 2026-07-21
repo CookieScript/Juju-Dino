@@ -3222,7 +3222,7 @@ do
     end)
 
     local handle_scroll = LPH_JIT_MAX(function(_, state, input)
-        if state ~= Enum["UserInputState"]["Change"] or input["UserInputType"] ~= Enum["UserInputType"]["MouseWheel"] then
+        if (state ~= Enum["UserInputState"]["Change"] and state ~= Enum["UserInputState"]["End"]) or (input["UserInputType"] ~= Enum["UserInputType"]["MouseWheel"] and input["UserInputType"] ~= Enum["UserInputType"]["Touch"]) then
             return
         end
 
