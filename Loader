@@ -6,6 +6,8 @@ local run = function(func)
     func()
 end
 run(function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CookieScript/Juju-Dino/refs/heads/main/games/addon.txt"))()
+    -- // Auto Execute
     loadstring(game:HttpGet("https://raw.githubusercontent.com/CookieScript/Juju-Dino/refs/heads/main/games/Main"))()
 end)
 if (game.GameId == 6035872082) then -- // Rivals
