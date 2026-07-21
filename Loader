@@ -1,0 +1,4 @@
+if JUJU_DINOLOADED then
+    return
+end
+JUJU_DINOLOADED = true
