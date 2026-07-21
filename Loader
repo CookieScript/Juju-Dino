@@ -6,5 +6,17 @@ local run = function(func)
     func()
 end
 run(function()
-    loadstring(game:HttpGet(""))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CookieScript/Juju-Dino/refs/heads/main/games/Main"))()
 end)
+if (game.GameId == 6035872082) then -- // Rivals
+    game:GetService("Players").LocalPlayer:Kick("Not Updated Yet")
+elseif (game.GameId == 1008451066) then -- // Da hood
+    --game:GetService("Players").LocalPlayer:Kick("Not Updated Yet")
+    loadstring(game:HttpGet(""))()
+elseif (game.GameId == 3634139746) then -- // Hood custom
+    game:GetService("Players").LocalPlayer:Kick("Not Updated Yet")
+elseif (game.GameId == 2619619496) then -- // bedwars
+    game:GetService("Players").LocalPlayer:Kick("Not Supported Yet")
+else
+    game:GetService("Players").LocalPlayer:Kick("Not Supported Yet")
+end
